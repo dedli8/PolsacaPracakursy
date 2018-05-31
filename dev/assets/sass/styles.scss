@@ -1,0 +1,25 @@
+@import 'settings';
+@import 'fonts';
+
+
+.container{
+  max-width: $width-max;
+  margin: 0 auto;
+  //    .media(@width-mid, {
+  //padding: 0 2%;
+  //    });
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.valign{
+  position: relative;
+  height: 100%;
+  &-content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
