@@ -1,0 +1,38 @@
+.navmenu{
+  display: inline-block;
+  width: 19px;
+  height: 16px;
+  background-image: url("img/menuicon.png");
+  background-position: center;
+  background-size: 19px 16px;
+  margin-right: 4px;
+  position: relative;
+}
+.navmenu-dropdown-wrap{
+  display: none;
+  position: absolute;
+  padding-top: 32px;
+  //top: 32px;
+  left: -2px;
+  background-color: transparent;
+}
+.navmenu-dropdown{
+  min-width: 230px;
+  z-index: 1;
+  color: #000000;
+  padding: 15px 0 19px 23px;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 10px;
+  background-color: gray;
+}
+.navmenu:hover .navmenu-dropdown-wrap {
+  display: block;
+}
+.navmenu-item{
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 35px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

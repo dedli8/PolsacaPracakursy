@@ -1,7 +1,11 @@
+@import 'normalize';
 @import 'settings';
 @import 'fonts';
 
-
+body{
+color: $mainwhite;
+  font-family: $echobold;
+}
 .container{
   max-width: $width-max;
   margin: 0 auto;
@@ -12,6 +16,7 @@
 a{
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 .valign{
   position: relative;
@@ -23,3 +28,6 @@ a{
     transform: translateY(-50%);
   }
 }
+
+@import "../../components/header/_header.scss";
+@import "../../components/navmenu/_navmenu.scss";

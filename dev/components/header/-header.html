@@ -1,0 +1,32 @@
+<header class="header">
+    <div class="container">
+        <nav class="navmenu"><div class="navmenu-dropdown-wrap"><div class="navmenu-dropdown"><a href="#" class="navmenu-item">головна</a><a href="#" class="navmenu-item">про сервіс</a><a href="#"
+                                                                                                            class="navmenu-item">курси польської</a><a
+                href="#" class="navmenu-item">статті</a><a href="#" class="navmenu-item">вакансії</a><a href="#"
+                                                                                            class="navmenu-item">тарифи</a>
+        </div>
+        </div>
+        </nav>
+        <a href="#" class="logo-box"><img src="img/logo.png" alt="logo" class="logo-img">
+            <span class="logo-text">робота в польщі</span>
+        </a>
+        <div class="language-panel">
+            <div class="language-item language-item-active">ua</div>
+            <div class="language-item">ru</div>
+        </div>
+    </div>
+</header>
+<script>
+    const langPanel = document.getElementsByClassName("language-panel")[0];
+    function changeLang(e) {
+        if (e.target.classList.contains('language-item-active')){
+            return
+        }
+        else {
+            e.target.parentElement.firstElementChild.classList.remove("language-item-active");
+            e.target.parentElement.lastElementChild.classList.remove("language-item-active");
+            e.target.classList.add("language-item-active");
+        }
+    }
+    langPanel.addEventListener('click', changeLang);
+</script>

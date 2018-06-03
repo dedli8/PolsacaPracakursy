@@ -1,7 +1,7 @@
 $width-max: '(min-width: 1336px)';
 $width-mid: '(min-width: 940px)';
 $width-sm: '(min-width: 768px)';
-$width-xs:'(min-width: 46px)';
+$width-xs:'(min-width: 460px)';
 
 
 $echo: 'EchoesSans';
@@ -9,8 +9,8 @@ $echomed: 'EchoesSans-Medium';
 $echobold: 'EchoesSans-Bold';
 $museo: 'MuseoSansCyrl';
 
-@mainwhite: #00a99d;
-@mainblack: #363636;
-@mainred: #dc0a0c;
+$mainwhite: #ffffff;
+$mainblack: #363636;
+$mainred: #dc0a0c;
 
 //@font-size-base: 16px;
