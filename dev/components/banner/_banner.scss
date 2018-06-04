@@ -1,0 +1,33 @@
+.banner{
+  height: 225px;
+  width: auto;
+  background-image: url("img/bannermobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 45px;
+  box-sizing: border-box;
+  border-bottom: 4px solid $mainred;
+}
+.banner-content > *{
+text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.banner-title{
+  text-transform: uppercase;
+}
+.banner-text{
+font-family: $museo;
+  font-weight: 300;
+}
+.banner-button{
+  font-family: $echo;
+  display: block;
+  margin: 0 auto;
+  background-color: $mainred;
+  border: none;
+  outline: none;
+  color: inherit;
+  border-radius: 9px;
+  padding: 11px 13px;
+}
