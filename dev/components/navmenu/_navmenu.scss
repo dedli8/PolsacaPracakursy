@@ -1,5 +1,6 @@
 .navmenu{
   display: inline-block;
+  vertical-align: middle;
   width: 19px;
   height: 16px;
   background-image: url("img/menuicon.png");
@@ -7,14 +8,21 @@
   background-size: 19px 16px;
   margin-right: 4px;
   position: relative;
+  @include media($width-xs){
+    width: 28px;
+    height: 23px;
+    background-size: 28px 23px;
+  }
 }
 .navmenu-dropdown-wrap{
   display: none;
   position: absolute;
   padding-top: 32px;
-  //top: 32px;
   left: -2px;
   background-color: transparent;
+  @include media($width-xs){
+    padding-top: 44px;
+  }
 }
 .navmenu-dropdown{
   min-width: 230px;
@@ -23,7 +31,7 @@
   padding: 15px 0 19px 23px;
   box-sizing: border-box;
   border-radius: 0 0 10px 10px;
-  background-color: gray;
+  background-color: white;
 }
 .navmenu:hover .navmenu-dropdown-wrap {
   display: block;
