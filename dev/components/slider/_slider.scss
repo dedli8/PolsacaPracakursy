@@ -1,0 +1,48 @@
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  .mySlides {
+    display: none;
+  }
+  .prev, .next {
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    padding-top: 11px;
+    top: 114px;
+    width: 44px;
+    height: 44px;
+    border-radius: 25px;
+    color: #8a8989;
+    font-size: 21px;
+    background-color: #e8e8e8;
+  }
+  .next {
+    right: 0;
+  }
+  .prev {
+    left: 0;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+}
