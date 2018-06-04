@@ -1,12 +1,19 @@
 .banner{
-  height: 225px;
-  width: auto;
-  background-image: url("img/bannermobile.png");
+  width: 100%;
+  //background-image: url("img/banner320.png");
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 25px;
   box-sizing: border-box;
   border-bottom: 4px solid $mainred;
+
+  @include media($width-max-xs){
+    background-image: url("img/banner460.png");
+  }
+  @include media($width-max-xxs){
+      background-image: url("img/banner320.png");
+    }
 }
 .banner-content > *{
 text-align: center;
