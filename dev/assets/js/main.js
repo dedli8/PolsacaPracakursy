@@ -69,7 +69,7 @@ langPanel.addEventListener('click', changeLang);
     document.addEventListener("DOMContentLoaded", function () {
 
         var studySlider = new Slideshow(".slideshow-container");
-
+        var coursesSlider = new Slideshow(".slideshow-container2");
     });
 
 })();
@@ -79,15 +79,17 @@ langPanel.addEventListener('click', changeLang);
 // banner buttons prev and next script
 
 var slideIndex = 1;
-showSlides(slideIndex);
+var sliderCont = '';
+// showSlides(slideIndex);
 
-function plusSlides(n) {
+function plusSlides(e, n) {
+    sliderCont = e.target;
     showSlides(slideIndex += n);
 }
 
 function showSlides(n) {
     var i;
-    var slidesItem = document.getElementsByClassName("mySlides");
+    var slidesItem = sliderCont.parentElement.getElementsByClassName("mySlides");
     if (n > slidesItem.length) {
         slideIndex = 1
     }
