@@ -1,0 +1,23 @@
+.forwhat{
+  text-align: center;
+  font-family: $museo;
+  font-weight: 300;
+  font-size: 14.58px;
+  background-image: url("img/deskbg.png");
+  padding: 20px;
+  background-repeat: no-repeat;
+  height: 240px;
+  box-sizing: border-box;
+  p{
+    margin: 0;
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &-title{
+    text-transform: uppercase;
+    font-family: $echobold;
+    font-size: 33.33px;
+  }
+}
