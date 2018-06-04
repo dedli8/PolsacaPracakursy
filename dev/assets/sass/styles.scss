@@ -9,6 +9,7 @@ color: $mainwhite;
 .container{
   max-width: $width-max;
   margin: 0 auto;
+  padding: 0 23px;
   //    .media(@width-mid, {
   //padding: 0 2%;
   //    });
@@ -36,3 +37,4 @@ a{
 @import "../../components/study/_study.scss";
 @import "../../components/forwhat/_forwhat.scss";
 @import "../../components/courses/_courses.scss";
+@import "../../components/footer/_footer.scss";
