@@ -4,9 +4,16 @@
   font-family: $echo;
   padding: 20px 0;
   text-align: center;
+  @include media($width-xs) {
+    padding: 33px 0;
+    font-size: 23.91px;
+  }
 }
 .social-icons{
   margin-bottom: 20px;
+  @include media($width-xs) {
+    margin-bottom: 35px;
+  }
 }
 .facebook-icon{
   display: inline-block;
@@ -16,6 +23,11 @@
   background-size: 32px 32px;
   background-repeat: no-repeat;
   margin-right: 10px;
+  @include media($width-xs) {
+    width: 47px;
+    height: 47px;
+    background-size: 47px 47px;
+  }
 }
 .instagram-icon{
   display: inline-block;
@@ -24,10 +36,17 @@
   background-image: url("img/inst.png");
   background-size: 32px 32px;
   background-repeat: no-repeat;
+  @include media($width-xs) {
+    width: 47px;
+    height: 47px;
+    background-size: 47px 47px;
+  }
 }
 .lisenses > .footer-text{
-  margin: 0;
   margin-bottom: 20px;
+  @include media($width-xs) {
+    margin-bottom: 35px;
+  }
   &:last-child{
     margin-bottom: 0;
   }
