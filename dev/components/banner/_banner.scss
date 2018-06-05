@@ -1,6 +1,6 @@
 .banner {
   width: 100%;
-  //background-image: url("img/banner320.png");
+  background-image: url("img/banner1336.png");
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 35px;
@@ -12,6 +12,9 @@
     padding-top: 65px;
     padding-bottom: 50px;
   }
+  @include media($width-max-mid) {
+    background-image: url("img/banner940.png");
+  }
   @include media($width-max-xs) {
     background-image: url("img/banner460.png");
   }
@@ -19,6 +22,7 @@
     background-image: url("img/banner320.png");
   }
 }
+
 
 .banner-content > * {
   text-align: center;
