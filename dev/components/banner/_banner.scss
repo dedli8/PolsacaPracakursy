@@ -3,14 +3,17 @@
   background-image: url("img/banner1336.png");
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding: 35px 0 25px 0;
   box-sizing: border-box;
   border-bottom: 4px solid $mainred;
+  font-size: 16.67px;
   @include media($width-xs) {
     font-size: 23.91px;
-    padding-top: 65px;
-    padding-bottom: 50px;
+    padding: 65px 0 50px 0;
+  }
+  @include media($width-mid) {
+    font-size: 49.99px;
+    padding: 90px 0 80px 0;
   }
   @include media($width-max-mid) {
     background-image: url("img/banner940.png");
@@ -31,12 +34,19 @@
   @include media($width-xs) {
     margin-bottom: 36px;
   }
+  @include media($width-mid) {
+    margin-bottom: 76px;
+  }
 }
 
 .banner-title {
   text-transform: uppercase;
+  font-size: 20.83px;
   @include media($width-xs) {
     font-size: 29.17px;
+  }
+  @include media($width-mid) {
+    font-size: 60.48px;
   }
 }
 
@@ -57,10 +67,13 @@
   outline: none;
   color: $mainwhite;
   border-radius: 9px;
-  font-size: 16.67px;@include media($width-xs) {
+  @include media($width-xs) {
     width: 168px;
     height: 51px;
-    font-size: 23.91px;
   font-family: $echobold;
+  }
+  @include media($width-mid) {
+    width: 350px;
+    height: 105px;
   }
 }
