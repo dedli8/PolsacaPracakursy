@@ -1,4 +1,4 @@
-.banner{
+.banner {
   width: 100%;
   //background-image: url("img/banner320.png");
   background-position: center;
@@ -7,27 +7,44 @@
   padding-bottom: 25px;
   box-sizing: border-box;
   border-bottom: 4px solid $mainred;
-
-  @include media($width-max-xs){
+  @include media($width-xs) {
+    font-size: 23.91px;
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+  @include media($width-max-xs) {
     background-image: url("img/banner460.png");
   }
-  @include media($width-max-xxs){
-      background-image: url("img/banner320.png");
-    }
+  @include media($width-max-xxs) {
+    background-image: url("img/banner320.png");
+  }
 }
-.banner-content > *{
-text-align: center;
+
+.banner-content > * {
+  text-align: center;
   margin: 0;
   margin-bottom: 32px;
+  @include media($width-xs) {
+    margin-bottom: 36px;
+  }
 }
-.banner-title{
+
+.banner-title {
   text-transform: uppercase;
+  @include media($width-xs) {
+    font-size: 29.17px;
+  }
 }
-.banner-text{
-font-family: $museo;
+
+.banner-text {
+  font-family: $museo;
   font-weight: 300;
 }
-.red-button{
+
+.red-button {
+  cursor: pointer;
+  width: 119px;
+  height: 36px;
   font-family: $echo;
   display: block;
   margin: 0 auto;
@@ -36,6 +53,10 @@ font-family: $museo;
   outline: none;
   color: $mainwhite;
   border-radius: 9px;
-  padding: 11px 13px;
-  font-size: 16.67px;
+  font-size: 16.67px;@include media($width-xs) {
+    width: 168px;
+    height: 51px;
+    font-size: 23.91px;
+  font-family: $echobold;
+  }
 }

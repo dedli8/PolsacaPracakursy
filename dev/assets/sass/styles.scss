@@ -11,9 +11,9 @@ color: $mainwhite;
   max-width: $width-max;
   margin: 0 auto;
   padding: 0 23px;
-  //    .media(@width-mid, {
-  //padding: 0 2%;
-  //    });
+  @include media($width-xs){
+    padding: 0 33px;
+  }
 }
 a{
   text-decoration: none;
