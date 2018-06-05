@@ -42,6 +42,12 @@
     background-size: 47px 47px;
   }
 }
+.footer-text{
+  margin-bottom: 20px;
+  @include media($width-xs) {
+    margin-bottom: 35px;
+  }
+}
 .lisenses > .footer-text{
   margin-bottom: 20px;
   @include media($width-xs) {
