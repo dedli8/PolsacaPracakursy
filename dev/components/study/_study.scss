@@ -1,6 +1,6 @@
 /* banner styles starts */
 .study {
-  padding: 26px 0;
+  padding: 20px 0 26px 0;
   background-image: url("img/mainbg.png");
   @include media($width-xs){
     padding: 36px 0;
@@ -14,7 +14,7 @@
     color: $mainred;
     font-family: $echomed;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     @include media($width-xs){
       font-size: 35.87px;
       margin-bottom: 30px;
@@ -36,7 +36,7 @@
       }
       img {
         width: 157px;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
         @include media($width-xs){
           margin-bottom: 30px;
           width: 225px;
@@ -70,10 +70,10 @@
       }
     }
     .study-item-title{
-      margin-bottom: 20px;
+      margin-bottom: 17px;
       color: $mainred;
       text-transform: uppercase;
-      font-weight: 500;
+      font-family: $museo500;
       @include media($width-xs){
         margin-bottom: 30px;
       }
@@ -83,7 +83,7 @@
     }
     .study-item-text{
       color: #333333;
-      font-weight: 300;
+     font-family: $museo300;
     }
   }
 /* banner styles ends */

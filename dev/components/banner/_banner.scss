@@ -3,7 +3,7 @@
   background-image: url("img/banner1336.png");
   background-position: center;
   background-repeat: no-repeat;
-  padding: 35px 0 25px 0;
+  padding: 40px 0 35px 0;
   box-sizing: border-box;
   border-bottom: 4px solid $mainred;
   font-size: 16.67px;
@@ -31,7 +31,7 @@
 
 .banner-content > * {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
   @include media($width-xs) {
     margin-bottom: 36px;
   }
@@ -50,10 +50,9 @@
     font-size: 60.48px;
   }
 }
-
 .banner-text {
-  font-family: $museo;
-  font-weight: 300;
+  font-family: $museo300;
+  margin-bottom: 31px;
 }
 
 .red-button {

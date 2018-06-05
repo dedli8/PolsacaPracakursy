@@ -1,10 +1,9 @@
 .forwhat{
   text-align: center;
-  font-family: $museo;
-  font-weight: 300;
+  font-family: $museo300;
   font-size: 14.58px;
   background-image: url("img/study1336.png");
-  padding: 20px 0;
+  padding: 12px 0;
   background-repeat: no-repeat;
   box-sizing: border-box;
   @include media($width-xs){
@@ -24,8 +23,20 @@
   @include media($width-max-xxs) {
     background-image: url("img/studybg320.png");
   }
-  p{
-    margin-bottom: 15px;
+  &-title{
+    text-transform: uppercase;
+    font-family: $echobold;
+    font-size: 33.33px;
+    margin-bottom: 14px;
+    @include media($width-xs){
+      font-size: 47.82px;
+    }
+    @include media($width-mid){
+      font-size: 66.67px;
+    }
+  }
+  .forwhat-text{
+    margin-bottom: 23px;
     @include media($width-xs){
       margin-bottom: 21px;
     }
@@ -34,17 +45,6 @@
     }
     &:last-child{
       margin-bottom: 0;
-    }
-  }
-  &-title{
-    text-transform: uppercase;
-    font-family: $echobold;
-    font-size: 33.33px;
-    @include media($width-xs){
-      font-size: 47.82px;
-    }
-    @include media($width-mid){
-      font-size: 66.67px;
     }
   }
 }
