@@ -5,6 +5,7 @@
     display: none;
   }
   .prev, .next {
+    text-align: center;
     box-sizing: border-box;
     cursor: pointer;
     position: absolute;
@@ -12,10 +13,24 @@
     top: 114px;
     width: 44px;
     height: 44px;
-    border-radius: 25px;
+    border-radius: 100px;
     color: #8a8989;
     font-size: 21px;
     background-color: #e8e8e8;
+    @include media($width-xs){
+      width: 64px;
+      height: 64px;
+      top: 162px;
+      font-size: 27px;
+      padding-top: 19px;
+    }
+    @include media($width-mid){
+      width: 133px;
+      height: 133px;
+      top: 342px;
+      font-size: 70px;
+      padding-top: 30px;
+    }
   }
   .next {
     right: 0;
