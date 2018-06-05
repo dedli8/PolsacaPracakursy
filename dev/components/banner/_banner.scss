@@ -68,13 +68,16 @@
   outline: none;
   color: $mainwhite;
   border-radius: 9px;
+  font-size: 16.67px;
   @include media($width-xs) {
     width: 168px;
     height: 51px;
   font-family: $echobold;
+    font-size: 23.91px;
   }
   @include media($width-mid) {
     width: 350px;
     height: 105px;
+    font-size: 49.99px;
   }
 }
