@@ -1,34 +1,103 @@
-/* study styles starts */
+/* banner styles starts */
 .study {
   padding: 26px 0;
   background-image: url("img/mainbg.png");
-  font-family: $museo;
-  font-size: 18.75px;
-  text-align: center;
-
+  @include media($width-xs){
+    padding: 36px 0;
+  }
   .study-title {
     text-transform: uppercase;
     text-align: center;
     color: $mainred;
     font-family: $echomed;
     font-size: 25px;
-    margin: 0;
     margin-bottom: 20px;
+    @include media($width-xs){
+      font-size: 35.87px;
+      margin-bottom: 30px;
+    }
   }
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    //background-image: url("img/mainbg.png");
+    .mySlides {
+      display: none;
+      font-family: $museo;
+      font-size: 18.75px;
+      text-align: center;
+      @include media($width-xs){
+        font-size: 26.9px;
+      }
+      img {
+        width: 157px;
+        margin-bottom: 20px;
+        @include media($width-xs){
+          margin-bottom: 30px;
+          width: 225px;
+        }
+      }
+    }
+    .prev, .next {
+      text-align: center;
+      box-sizing: border-box;
+      cursor: pointer;
+      position: absolute;
+      padding-top: 11px;
+      top: 114px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50px;
+      color: #8a8989;
+      font-size: 21px;
+      background-color: #e8e8e8;
+      @include media($width-xs){
+        width: 64px;
+        height: 64px;
+        top: 162px;
+        font-size: 27px;
+        padding-top: 19px;
+      }
+    }
+    .next {
+      right: 0;
+    }
 
-  .study-img {
-    width: 157px;
-  }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
 
-  .study-item-title {
-    color: $mainred;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
 
-  .study-item-text {
-    color: #333333;
-    font-weight: 300;
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+    .study-item-title{
+      margin-bottom: 20px;
+      color: $mainred;
+      text-transform: uppercase;
+      font-weight: 500;
+      @include media($width-xs){
+        margin-bottom: 30px;
+      }
+    }
+    .study-item-text{
+      color: #333333;
+      font-weight: 300;
+    }
   }
 }
-/* study styles ends */
+/* banner styles ends */
