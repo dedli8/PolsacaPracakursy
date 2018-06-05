@@ -11,6 +11,10 @@
     padding: 28px 0;
     font-size: 20.92px;
   }
+  @include media($width-mid){
+    padding: 82px 0 64px 0;
+    font-size: 41.67px;
+  }
   @include media($width-max-mid) {
     background-image: url("img/studybg940.png");
   }
@@ -25,6 +29,9 @@
     @include media($width-xs){
       margin-bottom: 21px;
     }
+    @include media($width-mid){
+      margin-bottom: 53px;
+    }
     &:last-child{
       margin-bottom: 0;
     }
@@ -35,6 +42,9 @@
     font-size: 33.33px;
     @include media($width-xs){
       font-size: 47.82px;
+    }
+    @include media($width-mid){
+      font-size: 66.67px;
     }
   }
 }
