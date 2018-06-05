@@ -3,14 +3,28 @@
   font-family: $museo;
   font-weight: 300;
   font-size: 14.58px;
-  background-image: url("img/deskbg.png");
+  background-image: url("img/study1336.png");
   padding: 20px 0;
   background-repeat: no-repeat;
-  height: 240px;
   box-sizing: border-box;
+  @include media($width-xs){
+    padding: 28px 0;
+    font-size: 20.92px;
+  }
+  @include media($width-max-mid) {
+    background-image: url("img/studybg940.png");
+  }
+  @include media($width-max-xs) {
+    background-image: url("img/studybg460.png");
+  }
+  @include media($width-max-xxs) {
+    background-image: url("img/studybg320.png");
+  }
   p{
-    margin: 0;
     margin-bottom: 15px;
+    @include media($width-xs){
+      margin-bottom: 25px;
+    }
     &:last-child{
       margin-bottom: 0;
     }
@@ -19,5 +33,8 @@
     text-transform: uppercase;
     font-family: $echobold;
     font-size: 33.33px;
+    @include media($width-xs){
+      font-size: 47.82px;
+    }
   }
 }
