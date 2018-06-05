@@ -17,6 +17,9 @@ p{
   @include media($width-xs){
     padding: 0 33px;
   }
+  @include media($width-mid){
+    padding: 0 50px;
+  }
 }
 a{
   text-decoration: none;

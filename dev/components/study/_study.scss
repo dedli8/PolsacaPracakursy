@@ -5,6 +5,9 @@
   @include media($width-xs){
     padding: 36px 0;
   }
+  @include media($width-mid){
+    padding: 80px 0;
+  }
   .study-title {
     text-transform: uppercase;
     text-align: center;
@@ -16,11 +19,14 @@
       font-size: 35.87px;
       margin-bottom: 30px;
     }
+    @include media($width-mid){
+      font-size: 74.98px;
+      margin-bottom: 65px;
+    }
   }
   .slideshow-container {
     position: relative;
     margin: auto;
-    //background-image: url("img/mainbg.png");
     .mySlides {
       display: none;
       font-family: $museo;
@@ -29,12 +35,19 @@
       @include media($width-xs){
         font-size: 26.9px;
       }
+      @include media($width-mid){
+        font-size: 56.23px;
+      }
       img {
         width: 157px;
         margin-bottom: 20px;
         @include media($width-xs){
           margin-bottom: 30px;
           width: 225px;
+        }
+        @include media($width-mid){
+          margin-bottom: 65px;
+          width: 471px;
         }
       }
     }
@@ -47,7 +60,7 @@
       top: 114px;
       width: 44px;
       height: 44px;
-      border-radius: 50px;
+      border-radius: 100px;
       color: #8a8989;
       font-size: 21px;
       background-color: #e8e8e8;
@@ -57,6 +70,13 @@
         top: 162px;
         font-size: 27px;
         padding-top: 19px;
+      }
+      @include media($width-mid){
+        width: 133px;
+        height: 133px;
+        top: 342px;
+        font-size: 70px;
+        padding-top: 30px;
       }
     }
     .next {
@@ -92,6 +112,9 @@
       font-weight: 500;
       @include media($width-xs){
         margin-bottom: 30px;
+      }
+      @include media($width-mid){
+        margin-bottom: 65px;
       }
     }
     .study-item-text{
