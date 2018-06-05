@@ -1,12 +1,18 @@
 .header{
   background-color: #1b1b1b;
   border-bottom: 1px solid #2f2f2f;
-  padding: 2px;
+  padding: 2px 2px 2px 5px;
   border-bottom: 3px solid #2c2c2c;
   box-sizing: border-box;
   font-size: 16.67px;
   @include media($width-xs){
     font-size: 23.91px;
+    padding: 2px 10px 2px 8px;
+  }
+  @include media($width-mid){
+    border: none;
+    font-size: 29.17px;
+    padding: 6px 50px 6px 11px;
   }
 .container > *{
   display: inline-block;
@@ -21,8 +27,14 @@
    margin-right: 5px;
    vertical-align: middle;
    @include media($width-xs){
-     width: 55px;
-     height: 55px;
+       width: 55px;
+       height: 55px;
+       margin-right: 10px;
+     }
+   @include media($width-mid){
+     width: 53px;
+     height: 53px;
+     margin-right: 16px;
    }
  }
   .logo-text{
@@ -41,6 +53,9 @@
     @include media($width-xs){
       top: 10px;
     }
+    @include media($width-mid){
+      top: 8px;
+    }
   }
   .language-item{
     font-family: $echomed;
@@ -52,6 +67,9 @@
     border-radius: 11px;
     @include media($width-xs){
       font-size: 19.14px;
+    }
+    @include media($width-mid){
+      font-size: 23.46px;
     }
   }
   .language-item-active{

@@ -9,9 +9,17 @@
   margin-right: 4px;
   position: relative;
   @include media($width-xs){
+    margin-right: 6px;
     width: 28px;
     height: 23px;
     background-size: 28px 23px;
+    font-size: 23.87px;
+  }
+  @include media($width-mid){
+    margin-right: 14px;
+    width: 31px;
+    height: 26px;
+    background-size: 31px 26px;
   }
 }
 .navmenu-dropdown-wrap{
@@ -22,6 +30,11 @@
   background-color: transparent;
   @include media($width-xs){
     padding-top: 44px;
+    top: -8px;
+  }
+  @include media($width-mid){
+    padding-top: 53px;
+    left: -11px;
   }
 }
 .navmenu-dropdown{
