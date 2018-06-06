@@ -20,6 +20,9 @@ p{
   @include media($width-mid){
     padding: 0 50px;
   }
+  @include media($width-max){
+    padding: 0 115px;
+  }
 }
 a{
   text-decoration: none;

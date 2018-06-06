@@ -1,8 +1,19 @@
+
 .slideshow-container {
   position: relative;
   margin: auto;
+  @include media($width-max){
+    text-align: center;
+  }
   .mySlides {
     display: none;
+    @include media($width-max){
+      display: inline-block;
+      margin-right: 130px;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
   }
   .prev, .next {
     font-family: $museo500;
@@ -31,6 +42,9 @@
       top: 342px;
       font-size: 70px;
       padding-top: 30px;
+    }
+    @include media($width-max){
+      display: none;
     }
   }
   .next {

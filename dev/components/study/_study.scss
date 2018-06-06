@@ -8,6 +8,9 @@
   @include media($width-mid){
     padding: 80px 0;
   }
+  @include media($width-max){
+    padding: 55px 0;
+  }
   .study-title {
     text-transform: uppercase;
     text-align: center;
@@ -20,8 +23,12 @@
       margin-bottom: 30px;
     }
     @include media($width-mid){
-      font-size: 74.98px;
-      margin-bottom: 65px;
+        font-size: 74.98px;
+        margin-bottom: 65px;
+      }
+    @include media($width-max){
+      font-size: 39.58px;
+      margin-bottom: 55px;
     }
   }
     .mySlides {
@@ -34,6 +41,9 @@
       @include media($width-mid){
         font-size: 56.23px;
       }
+      @include media($width-max){
+        font-size: 18.75px;
+      }
       img {
         width: 157px;
         margin-bottom: 14px;
@@ -42,8 +52,12 @@
           width: 225px;
         }
         @include media($width-mid){
-          margin-bottom: 65px;
-          width: 471px;
+            margin-bottom: 65px;
+            width: 471px;
+          }
+        @include media($width-max){
+          margin-bottom: 22px;
+          width: 200px;
         }
       }
     }
@@ -79,6 +93,9 @@
       }
       @include media($width-mid){
         margin-bottom: 65px;
+      }
+      @include media($width-max){
+        margin-bottom: 29px;
       }
     }
     .study-item-text{

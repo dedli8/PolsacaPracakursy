@@ -24,11 +24,13 @@ langPanel.addEventListener('click', changeLang);
 
     Slideshow.prototype = {
         init: function () {
+                if(screen.width<=1336){
             this.slides = this.el.querySelectorAll(".mySlides");
             this.index = 0;
             this.timer = null;
             this.action();
             this.stopStart();
+                }
         },
         _slideTo: function (slide) {
             var currentSlide = this.slides[slide];
