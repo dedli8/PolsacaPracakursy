@@ -73,7 +73,7 @@
   }
   @include media($width-mid) {
     padding: 0;
-    width: 578px;
+    width: auto;
     display: inline-block;
   }
     @include media($width-max){

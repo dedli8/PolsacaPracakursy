@@ -17,6 +17,11 @@
     padding: 90px 0 80px 0;
     border-bottom-width: 12px;
   }
+  @include media($width-max) {
+    font-size: 25px;
+    padding: 164px 0 81px 0;
+    border-bottom-width: 1px;
+  }
   @include media($width-max-mid) {
     background-image: url("img/banner940.png");
   }
@@ -38,6 +43,9 @@
   @include media($width-mid) {
     margin-bottom: 76px;
   }
+  @include media($width-max) {
+    margin-bottom: 55px;
+  }
 }
 
 .banner-title {
@@ -48,6 +56,9 @@
   }
   @include media($width-mid) {
     font-size: 60.48px;
+  }
+  @include media($width-max) {
+    font-size: 50px;
   }
 }
 .banner-text {
@@ -78,5 +89,10 @@
     width: 350px;
     height: 105px;
     font-size: 49.99px;
+  }
+  @include media($width-mid) {
+    width: 174px;
+    height: 57px;
+    font-size: 24.12px;
   }
 }
