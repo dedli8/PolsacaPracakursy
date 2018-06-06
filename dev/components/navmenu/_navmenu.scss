@@ -8,18 +8,30 @@
   background-size: 19px 16px;
   margin-right: 4px;
   position: relative;
+  font-size: 16.67px;
   @include media($width-xs){
     margin-right: 6px;
     width: 28px;
     height: 23px;
     background-size: 28px 23px;
-    font-size: 23.87px;
+    font-size: 23.91px;
   }
   @include media($width-mid){
     margin-right: 14px;
     width: 31px;
     height: 26px;
     background-size: 31px 26px;
+    font-size: 23.87px;
+  }
+  @include media($width-max){
+    position: absolute;
+    font-family: $echo;
+    font-size: 14.58px;
+    background-image: none;
+    width: 578px;
+    height: auto;
+    right: 130px;
+    top: 26px;
   }
 }
 .navmenu-dropdown-wrap{
@@ -28,16 +40,19 @@
   padding-top: 32px;
   left: -5px;
   background-color: transparent;
-  font-size: 16.67px;
   @include media($width-xs){
     padding-top: 44px;
     top: -8px;
-    font-size: 23.91px;
   }
   @include media($width-mid){
     padding-top: 53px;
     left: -11px;
-    font-size: 29.17px;
+  }
+  @include media($width-max){
+    padding-top: 0;
+    left: -11px;
+    display: block;
+    position: static;
   }
 }
 .navmenu-dropdown{
@@ -56,10 +71,22 @@
     padding: 26px 0 50px 47px;
     width: 391px;
   }
+  @include media($width-mid) {
+    padding: 0;
+    width: 578px;
+    display: inline-block;
+  }
+    @include media($width-max){
+      background-color: transparent;
+      width: auto;
+    }
 }
 .navmenu:hover{
   width: 0;
   margin-right: 0;
+  @include media($width-max){
+    width: 578px;
+  }
 }
 .navmenu:hover .navmenu-dropdown-wrap {
   display: block;
@@ -69,6 +96,12 @@
   display: block;
   margin-bottom: 35px;
   &:last-child{
+    margin-bottom: 0;
+  }
+  @include media($width-max){
+    display: inline-block;
+    color: $mainwhite;
+    margin-right: 20px;
     margin-bottom: 0;
   }
 }
