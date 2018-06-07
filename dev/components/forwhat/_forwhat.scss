@@ -2,7 +2,7 @@
   text-align: center;
   font-family: $museo300;
   font-size: 14.58px;
-  background-image: url("img/studybg1336.png");
+  background-image: url("img/deskbg940.jpg");
   background-position: center;
   padding: 14px 0 20px 0;
   background-repeat: no-repeat;
@@ -20,13 +20,13 @@
     font-size: 31.25px;
   }
   @include media($width-max-mid) {
-    background-image: url("img/studybg940.png");
+    background-image: url("img/deskbg940.jpg");
   }
   @include media($width-max-xs) {
-    background-image: url("img/studybg460.png");
+    background-image: url("img/deskbg460.jpg");
   }
   @include media($width-max-xxs) {
-    background-image: url("img/studybg320.png");
+    background-image: url("img/deskbg320.jpg");
   }
   &-title{
     text-transform: uppercase;
