@@ -9,9 +9,9 @@
     display: none;
     @include media($width-max){
       display: inline-block;
-      margin-right: 130px;
+      margin-right: 10px;
     }
-    &:last-child{
+    &:nth-child(3){
       margin-right: 0;
     }
   }

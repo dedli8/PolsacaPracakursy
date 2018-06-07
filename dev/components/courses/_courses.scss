@@ -13,6 +13,20 @@
     padding: 70px 0;
     font-size: 58.33px;
   }
+  @include media($width-max) {
+    padding: 53px 0;
+    font-size: 25px;
+  }
+  .mySlides {
+    @include media($width-max) {
+      margin-right: 81px;
+    }
+    &:nth-child(3) {
+      @include media($width-max) {
+        margin-right: 0;
+      }
+    }
+}
   .courses-item-title {
     text-transform: uppercase;
     font-family: $museo700;
@@ -27,6 +41,10 @@
       font-size: 66.67px;
       margin-bottom: 50px;
     }
+    @include media($width-max) {
+      font-size: 41.67px;
+      margin-bottom: 56px;
+    }
   }
   .coursis-item-text {
     font-family: $museo100;
@@ -40,11 +58,21 @@
       font-size: 50px;
       margin-bottom: 50px;
     }
+    @include media($width-max) {
+      font-size: 22.92px;
+      margin-bottom: 52px;
+    }
   }
   .courses-terms-item {
     margin-bottom: 14px;
+    @include media($width-max) {
+      margin-bottom: 52px;
+    }
     &:last-child{
       margin-bottom: 25px;
+      @include media($width-max) {
+        margin-bottom: 52px;
+      }
     }
   }
   .prev, .next{

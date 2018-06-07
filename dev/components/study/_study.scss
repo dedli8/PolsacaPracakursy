@@ -43,6 +43,12 @@
       }
       @include media($width-max){
         font-size: 18.75px;
+        margin-right: 129px;
+      }
+      .mySlides:nth-child(3) {
+        @include media($width-max) {
+          margin-right: 0;
+        }
       }
       img {
         width: 157px;
