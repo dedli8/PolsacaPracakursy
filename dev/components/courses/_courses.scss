@@ -1,5 +1,5 @@
 .courses {
-  padding: 21px 0 28px 0;
+  padding: 24px 0 28px 0;
   background-image: url("img/mainbg.png");
   font-family: $museo500;
   font-size: 25px;
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     font-family: $museo700;
     color: $mainred;
-    margin-bottom: 9px;
+    margin-bottom: 14px;
     font-size: 33.33px;
     @include media($width-xs) {
       font-size: 47.82px;
@@ -49,7 +49,7 @@
   .coursis-item-text {
     font-family: $museo100;
     font-size: 20.83px;
-    margin-bottom: 22px;
+    margin-bottom: 27px;
     @include media($width-xs) {
         font-size: 29.89px;
         margin-bottom: 35px;
@@ -64,12 +64,12 @@
     }
   }
   .courses-terms-item {
-    margin-bottom: 14px;
+    margin-bottom: 17px;
     @include media($width-max) {
       margin-bottom: 52px;
     }
     &:last-child{
-      margin-bottom: 25px;
+      margin-bottom: 28px;
       @include media($width-max) {
         margin-bottom: 52px;
       }

@@ -1,6 +1,8 @@
 .footer{
   font-size: 16.67px;
-  background-color: #3b3a3a;
+  background-image: url("img/footerbg.png");
+  background-color: #424242;
+  background-repeat: repeat;
   font-family: $echo;
   padding: 24px 0;
   text-align: center;
@@ -32,7 +34,7 @@
   }
 }
 .social-icons{
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   @include media($width-xs) {
     margin-bottom: 35px;
   }
@@ -92,7 +94,7 @@
   }
 }
 .footer-text{
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   @include media($width-xs) {
     margin-bottom: 35px;
   }

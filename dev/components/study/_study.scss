@@ -18,6 +18,7 @@
     font-family: $echomed;
     font-size: 25px;
     margin-bottom: 17px;
+    line-height: 28px;
     @include media($width-xs){
       font-size: 35.87px;
       margin-bottom: 30px;
@@ -90,7 +91,7 @@
       }
     }
     .study-item-title{
-      margin-bottom: 17px;
+      margin-bottom: 24px;
       color: $mainred;
       text-transform: uppercase;
       font-family: $museo500;

@@ -4,7 +4,7 @@
   font-size: 14.58px;
   background-image: url("img/studybg1336.png");
   background-position: center;
-  padding: 12px 0;
+  padding: 14px 0 20px 0;
   background-repeat: no-repeat;
   box-sizing: border-box;
   @include media($width-xs){
@@ -31,7 +31,7 @@
     text-transform: uppercase;
     font-family: $echobold;
     font-size: 33.33px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     @include media($width-xs){
       font-size: 47.82px;
     }
