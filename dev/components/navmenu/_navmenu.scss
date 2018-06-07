@@ -30,8 +30,9 @@
     background-image: none;
     width: 578px;
     height: auto;
-    right: 130px;
+    right: 170px;
     top: 26px;
+    margin-right: 0;
   }
 }
 .navmenu-dropdown-wrap{
@@ -85,6 +86,7 @@
   margin-right: 0;
   @include media($width-max){
     width: 578px;
+
   }
 }
 .navmenu:hover .navmenu-dropdown-wrap {

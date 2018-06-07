@@ -14,10 +14,18 @@
     font-size: 58.33px;
   }
   @include media($width-max) {
-    padding: 53px 0;
+    padding: 46px 0 53px 0;
     font-size: 25px;
   }
+  .red-button {
+    @include media($width-max) {
+      width: 121px;
+      height: 37px;
+      font-size: 16.67px;
+    }
+  }
   .mySlides {
+    text-align: center;
     @include media($width-max) {
       margin-right: 81px;
     }
@@ -43,24 +51,30 @@
     }
     @include media($width-max) {
       font-size: 41.67px;
-      margin-bottom: 56px;
+      margin-bottom: 44px;
     }
   }
-  .coursis-item-text {
+  .courses-item-text {
+    display: inline-block;
+    text-align: center;
     font-family: $museo100;
     font-size: 20.83px;
     margin-bottom: 27px;
+    width: 253px;
     @include media($width-xs) {
+      width: 362px;
         font-size: 29.89px;
         margin-bottom: 40px;
       }
     @include media($width-mid) {
+      width: 604px;
       font-size: 50px;
       margin-bottom: 62px;
     }
     @include media($width-max) {
+      width: 300px;
       font-size: 22.92px;
-      margin-bottom: 52px;
+      margin-bottom: 55px;
     }
   }
   .courses-terms-item {
@@ -72,7 +86,7 @@
       margin-bottom: 67px;
     }
     @include media($width-max) {
-      margin-bottom: 52px;
+      margin-bottom: 36px;
     }
     &:last-child{
       margin-bottom: 28px;
@@ -83,7 +97,7 @@
         margin-bottom: 64px;
       }
       @include media($width-max) {
-        margin-bottom: 52px;
+        margin-bottom: 54px;
       }
     }
   }

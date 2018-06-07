@@ -4,15 +4,13 @@
   margin: auto;
   @include media($width-max){
     text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
   .mySlides {
     display: none;
     @include media($width-max){
       display: inline-block;
-      margin-right: 10px;
-    }
-    &:nth-child(3){
-      margin-right: 0;
     }
   }
   .prev, .next {

@@ -74,8 +74,8 @@
       right: 50px;
     }
       @include media($width-max){
-        top: 18px;
-        right: 46px;
+        top: 19px;
+        right: 64px;
       }
   }
   .language-item{
@@ -96,6 +96,7 @@
     }
     @include media($width-max){
       font-size: 16.67px;
+      padding: 4px 7px;
     }
   }
   .language-item-active{

@@ -6,6 +6,9 @@
   font-family: $echo;
   padding: 24px 0;
   text-align: center;
+  a{
+    cursor: pointer;
+  }
   @include media($width-xs) {
     padding: 33px 0;
     font-size: 23.91px;
@@ -102,7 +105,7 @@
       margin-bottom: 28px;
     }
   @include media($width-max) {
-    margin-bottom: 3px;
+    margin-bottom: 7px;
   }
 }
 .lisenses{
@@ -110,6 +113,8 @@
     display: inline-block;
     vertical-align: top;
     font-family: $echolight;
+    text-align: center;
+    width: 232px;
   }
 }
   .contacts > .footer-text{

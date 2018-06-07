@@ -16,6 +16,7 @@
     font-size: 41.67px;
   }
   @include media($width-max) {
+    padding: 91px 0 94px 0;
     font-size: 31.25px;
   }
   @include media($width-max-mid) {
@@ -66,11 +67,16 @@
 }
   .forwhat-text{
     margin-bottom: 23px;
+    width: 232px;
+    display: inline-block;
+    text-align: center;
     @include media($width-xs){
       margin-bottom: 37px;
+      width: 332px;
     }
     @include media($width-mid){
       margin-bottom: 69px;
+      width: 670px;
     }
     @include media($width-max){
       text-align: left;
@@ -82,6 +88,9 @@
     }
     span{
       display: inline-block;
+      @include media($width-max) {
+       width: 92%;
+      }
     }
   }
 }

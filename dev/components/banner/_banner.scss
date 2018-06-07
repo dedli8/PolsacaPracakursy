@@ -7,6 +7,7 @@
   box-sizing: border-box;
   border-bottom: 4px solid $mainred;
   font-size: 16.67px;
+  text-align: center;
   @include media($width-xs) {
     font-size: 23.91px;
     padding: 62px 0 50px 0;
@@ -19,7 +20,7 @@
   }
   @include media($width-max) {
     font-size: 25px;
-    padding: 164px 0 81px 0;
+    padding: 153px 0 185px 0;
     border-bottom-width: 1px;
   }
   @include media($width-max-mid) {
@@ -44,7 +45,7 @@
     margin-bottom: 95px;
   }
   @include media($width-max) {
-    margin-bottom: 55px;
+    margin-bottom: 48px;
   }
 }
 
@@ -62,16 +63,21 @@
   }
 }
 .banner-text {
+  display: inline-block;
   font-family: $museo300;
   margin-bottom: 34px;
+  width: 242px;
   @include media($width-xs) {
     margin-bottom: 50px;
+    width: 351px;
   }
   @include media($width-mid) {
     margin-bottom: 80px;
+    width: 732px;
   }
   @include media($width-max) {
-    margin-bottom: 55px;
+    margin-bottom: 68px;
+    width: 376px;
   }
 }
 
