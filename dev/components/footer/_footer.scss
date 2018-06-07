@@ -12,6 +12,24 @@
     padding: 30px 0 48px 0;
     font-size: 25px;
   }
+  @include media($width-max) {
+    padding: 47px 0 47px 0;
+    font-size: 14.79px;
+  }
+  .container{
+    display: block;
+    @include media($width-max) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+  }
+.contacts{
+  @include media($width-max) {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 .social-icons{
   margin-bottom: 17px;
@@ -21,6 +39,9 @@
     @include media($width-mid) {
       margin-bottom: 30px;
     }
+  @include media($width-max) {
+    margin-bottom: 3px;
+  }
 }
 .facebook-icon{
   display: inline-block;
@@ -40,6 +61,12 @@
     height: 57px;
     background-size: 57px 57px;
   }
+  @include media($width-max) {
+    margin-right: 0px;
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+  }
 }
 .instagram-icon{
   display: inline-block;
@@ -58,6 +85,11 @@
     height: 57px;
     background-size: 57px 57px;
   }
+  @include media($width-max) {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+  }
 }
 .footer-text{
   margin-bottom: 19px;
@@ -67,7 +99,50 @@
     @include media($width-mid) {
       margin-bottom: 30px;
     }
+  @include media($width-max) {
+    margin-bottom: 3px;
+  }
 }
+.lisenses{
+  @include media($width-max) {
+    display: inline-block;
+    vertical-align: top;
+    font-family: $echolight;
+  }
+}
+  .contacts > .footer-text{
+    @include media($width-max) {
+      font-family: $echobold;
+    }
+  }
 .lisenses > .footer-text:last-child{
     margin-bottom: 0;
   }
+  .navmenu-dropdown-wrap{
+    display: none;
+    width: 366px;
+    overflow: hidden;
+    @include media($width-max){
+      display: inline-block;
+    }
+  }
+  .navmenu-dropdown{
+    column-count: 2;
+    width: 566px;
+    text-align: left;
+    font-size: 0;
+  }
+  .navmenu-item{
+    font-family: $echobold;
+    font-size: 18.75px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    width: 100%;
+      margin-right: 0px;
+    &:last-child{
+      @include media($width-max){
+        margin-bottom: 0;
+      }
+    }
+  }
+}

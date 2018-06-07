@@ -3,6 +3,7 @@
   font-family: $museo300;
   font-size: 14.58px;
   background-image: url("img/studybg1336.png");
+  background-position: center;
   padding: 12px 0;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -14,11 +15,11 @@
     padding: 82px 0 64px 0;
     font-size: 41.67px;
   }
-  @include media($width-max-mid) {
-    background-image: url("img/studybg940.png");
-  }
   @include media($width-max) {
     font-size: 31.25px;
+  }
+  @include media($width-max-mid) {
+    background-image: url("img/studybg940.png");
   }
   @include media($width-max-xs) {
     background-image: url("img/studybg460.png");
@@ -49,16 +50,16 @@
   }
 .forwhat-disk{
   display: none;
+  background-color: $mainwhite;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  margin-right: 14px;
+  position: relative;
+  vertical-align: top;
+  top: 17px;
   @include media($width-max) {
-    background-color: $mainwhite;
-    width: 8px;
-    height: 8px;
     display: inline-block;
-    border-radius: 8px;
-    margin-right: 14px;
-    position: relative;
-    vertical-align: top;
-    top: 17px;
   }
 }
   .forwhat-text{
@@ -78,10 +79,7 @@
       margin-bottom: 0;
     }
     span{
-      display: none;
-      @include media($width-max){
-        display: inline-block;
-      }
+      display: inline-block;
     }
   }
 }

@@ -42,10 +42,10 @@
   background-color: transparent;
   @include media($width-xs){
     padding-top: 44px;
-    top: -8px;
+    left: -8px;
   }
   @include media($width-mid){
-    padding-top: 53px;
+    padding-top: 46px;
     left: -11px;
   }
   @include media($width-max){
@@ -57,7 +57,6 @@
 }
 .navmenu-dropdown{
   width: 230px;
-  z-index: 1;
   color: #000000;
   padding: 15px 0 19px 23px;
   box-sizing: border-box;
@@ -71,15 +70,15 @@
     padding: 26px 0 50px 47px;
     width: 391px;
   }
-  @include media($width-mid) {
-    padding: 0;
-    width: auto;
-    display: inline-block;
-  }
     @include media($width-max){
       background-color: transparent;
       width: auto;
+      padding: 0;
+      display: inline-block;
     }
+  a{
+    display: inline-block;
+  }
 }
 .navmenu:hover{
   width: 0;
@@ -92,16 +91,20 @@
   display: block;
 }
 .navmenu-item{
+  cursor: pointer;
   text-transform: uppercase;
   display: block;
   margin-bottom: 35px;
-  &:last-child{
-    margin-bottom: 0;
-  }
   @include media($width-max){
     display: inline-block;
     color: $mainwhite;
     margin-right: 20px;
     margin-bottom: 0;
+  }
+  &:last-child{
+    margin-bottom: 0;
+    @include media($width-max){
+      margin-right: 0;
+    }
   }
 }
