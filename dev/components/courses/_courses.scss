@@ -6,7 +6,7 @@
   color: $mainblack;
   text-align: center;
   @include media($width-xs) {
-    padding: 38px 0;
+    padding: 34px 0 46px 0;
     font-size: 35.87px;
   }
   @include media($width-mid) {
@@ -35,7 +35,7 @@
     font-size: 33.33px;
     @include media($width-xs) {
       font-size: 47.82px;
-      margin-bottom: 35px;
+      margin-bottom: 19px;
     }
     @include media($width-mid) {
       font-size: 66.67px;
@@ -52,7 +52,7 @@
     margin-bottom: 27px;
     @include media($width-xs) {
         font-size: 29.89px;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
       }
     @include media($width-mid) {
       font-size: 50px;
@@ -65,11 +65,17 @@
   }
   .courses-terms-item {
     margin-bottom: 17px;
+    @include media($width-xs) {
+      margin-bottom: 25px;
+    }
     @include media($width-max) {
       margin-bottom: 52px;
     }
     &:last-child{
       margin-bottom: 28px;
+      @include media($width-xs) {
+        margin-bottom: 35px;
+      }
       @include media($width-max) {
         margin-bottom: 52px;
       }
@@ -78,7 +84,7 @@
   .prev, .next{
     top: 146px;
     @include media($width-xs) {
-        top: 243px;
+        top: 208px;
       }
     @include media($width-mid) {
       top: 345px;

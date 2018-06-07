@@ -9,7 +9,7 @@
   font-size: 16.67px;
   @include media($width-xs) {
     font-size: 23.91px;
-    padding: 65px 0 50px 0;
+    padding: 63px 0 50px 0;
     border-bottom-width: 6px;
   }
   @include media($width-mid) {
@@ -63,8 +63,18 @@
 }
 .banner-text {
   font-family: $museo300;
-  margin-bottom: 31px;
+  margin-bottom: 34px;
   line-height: 18px;
+  @include media($width-xs) {
+    line-height: 28px;
+    margin-bottom: 41px;
+  }
+  @include media($width-mid) {
+    margin-bottom: 76px;
+  }
+  @include media($width-max) {
+    margin-bottom: 55px;
+  }
 }
 
 .red-button {
