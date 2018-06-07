@@ -10,7 +10,7 @@
     font-size: 35.87px;
   }
   @include media($width-mid) {
-    padding: 70px 0;
+    padding: 60px 0 71px 0;
     font-size: 58.33px;
   }
   @include media($width-max) {
@@ -39,7 +39,7 @@
     }
     @include media($width-mid) {
       font-size: 66.67px;
-      margin-bottom: 50px;
+      margin-bottom: 33px;
     }
     @include media($width-max) {
       font-size: 41.67px;
@@ -56,7 +56,7 @@
       }
     @include media($width-mid) {
       font-size: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 62px;
     }
     @include media($width-max) {
       font-size: 22.92px;
@@ -68,6 +68,9 @@
     @include media($width-xs) {
       margin-bottom: 25px;
     }
+    @include media($width-mid) {
+      margin-bottom: 67px;
+    }
     @include media($width-max) {
       margin-bottom: 52px;
     }
@@ -75,6 +78,9 @@
       margin-bottom: 28px;
       @include media($width-xs) {
         margin-bottom: 35px;
+      }
+      @include media($width-mid) {
+        margin-bottom: 64px;
       }
       @include media($width-max) {
         margin-bottom: 52px;
@@ -87,7 +93,7 @@
         top: 208px;
       }
     @include media($width-mid) {
-      top: 345px;
+      top: 446px;
     }
   }
 }

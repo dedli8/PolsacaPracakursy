@@ -63,11 +63,11 @@
     border-radius: 11px;
     padding: 2px;
     position: absolute;
-    top: 7px;
+    top: 8px;
     right: 4px;
     @include media($width-xs){
-      top: 17px;
-      right: 14px;
+      top: 14px;
+      right: 10px;
     }
     @include media($width-mid) {
       top: 14px;
@@ -88,9 +88,11 @@
     border-radius: 11px;
     @include media($width-xs){
       font-size: 19.14px;
+      padding: 5px 7px;
     }
     @include media($width-mid){
       font-size: 23.46px;
+      padding: 5px 9px;
     }
     @include media($width-max){
       font-size: 16.67px;

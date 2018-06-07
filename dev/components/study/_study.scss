@@ -17,16 +17,14 @@
     color: $mainred;
     font-family: $echomed;
     font-size: 25px;
-    margin-bottom: 17px;
-    line-height: 28px;
+    margin-bottom: 24px;
     @include media($width-xs){
-      line-height: 40px;
       font-size: 35.87px;
-      margin-bottom: 22px;
+      margin-bottom: 31px;
     }
     @include media($width-mid){
         font-size: 74.98px;
-        margin-bottom: 65px;
+        margin-bottom: 57px;
       }
     @include media($width-max){
       font-size: 39.58px;
@@ -60,7 +58,7 @@
           width: 225px;
         }
         @include media($width-mid){
-            margin-bottom: 65px;
+            margin-bottom: 50px;
             width: 471px;
           }
         @include media($width-max){

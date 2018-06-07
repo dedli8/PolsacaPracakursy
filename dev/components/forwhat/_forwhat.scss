@@ -12,7 +12,7 @@
     font-size: 20.92px;
   }
   @include media($width-mid){
-    padding: 82px 0 64px 0;
+    padding: 69px 0 64px 0;
     font-size: 41.67px;
   }
   @include media($width-max) {
@@ -38,6 +38,7 @@
     }
     @include media($width-mid){
       font-size: 66.67px;
+      margin-bottom: 62px;
     }
     @include media($width-max){
       font-size: 50px;
@@ -69,7 +70,7 @@
       margin-bottom: 37px;
     }
     @include media($width-mid){
-      margin-bottom: 53px;
+      margin-bottom: 69px;
     }
     @include media($width-max){
       text-align: left;

@@ -95,6 +95,9 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 31px;
+  @include media($width-xs){
+    margin-bottom: 45px;
+  }
   @include media($width-max){
     display: inline-block;
     color: $mainwhite;
