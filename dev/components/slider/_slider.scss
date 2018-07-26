@@ -9,6 +9,9 @@
   }
   .mySlides {
     display: none;
+    &:first-child{
+      display: block;
+    }
     @include media($width-max){
       display: inline-block;
     }
@@ -19,7 +22,7 @@
     box-sizing: border-box;
     cursor: pointer;
     position: absolute;
-    padding-top: 12px;
+    padding-top: 14px;
     top: 114px;
     width: 44px;
     height: 44px;

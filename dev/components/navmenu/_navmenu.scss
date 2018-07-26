@@ -79,6 +79,18 @@
     }
   a{
     display: inline-block;
+    position: relative;
+  }
+  .navmenu-item a:hover {
+    color: $mainred;
+  }
+  .navmenu-item a:hover .menu-item-line {
+    @include media($width-max){
+      position: absolute;
+      display: block;
+      background-color: $mainred;
+      width: 100%;
+    }
   }
 }
 .navmenu:hover{
@@ -117,10 +129,5 @@
 //  position: absolute;
 //  display: none;
 //}
-//  .navmenu-item:hover > .menu-item-line {
-//    display: block;
-//    height: 3px;
-//    top: 5px;
-//  }
 
 }

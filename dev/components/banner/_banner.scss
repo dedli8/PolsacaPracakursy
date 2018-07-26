@@ -23,15 +23,15 @@
     padding: 153px 0 185px 0;
     border-bottom-width: 1px;
   }
-  @include media($width-max-mid) {
-    background-image: url("img/banner940.jpg");
-  }
-  @include media($width-max-xs) {
-    background-image: url("img/banner460.jpg");
-  }
-  @include media($width-max-xxs) {
-    background-image: url("img/banner320.jpg");
-  }
+  //@include media($width-max-mid) {
+  //  background-image: url("img/banner940.jpg");
+  //}
+  //@include media($width-max-xs) {
+  //  background-image: url("img/banner460.jpg");
+  //}
+  //@include media($width-max-xxs) {
+  //  background-image: url("img/banner320.jpg");
+  //}
 }
 
 

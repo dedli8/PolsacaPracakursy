@@ -1,7 +1,7 @@
 .footer{
   font-size: 16.67px;
-  background-image: url("img/footerbg.png");
-  background-color: #424242;
+  background-image: url("img/footerbg.jpg");
+  //background-color: #424242;
   background-repeat: repeat;
   font-family: $echo;
   padding: 24px 0;
@@ -27,6 +27,12 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+    }
+    .navmenu-item a:hover .menu-item-line {
+      @include media($width-max){
+        top: 20px;
+        height: 3px;
+      }
     }
 
   }
@@ -72,6 +78,9 @@
       height: 30px;
       background-size: 30px 30px;
   }
+  &:hover{
+    background-image: url("img/facebookred.png");
+  }
 }
 .instagram-icon{
   display: inline-block;
@@ -95,6 +104,9 @@
     height: 30px;
     background-size: 30px 30px;
   }
+  &:hover{
+    background-image: url("img/instred.png");
+  }
 }
 .footer-text{
   margin-bottom: 21px;
@@ -108,22 +120,33 @@
     margin-bottom: 7px;
   }
 }
-.lisenses{
+.licenses{
+  display: inline-block;
+  width: 274px;
+  @include media($width-xs) {
+    width: 393px;
+  }
+  @include media($width-mid) {
+    width: 415px;
+  }
   @include media($width-max) {
-    display: inline-block;
     vertical-align: top;
     font-family: $echolight;
     text-align: center;
     width: 232px;
   }
 }
+  .licenses .footer-text:hover{
+    color: $mainred;
+  }
   .contacts > .footer-text{
     @include media($width-max) {
       font-family: $echobold;
     }
   }
-.lisenses > .footer-text:last-child{
+.licenses > .footer-text:last-child{
     margin-bottom: 0;
+  width: 80%;
   }
   .navmenu-dropdown-wrap{
     display: none;
@@ -141,11 +164,14 @@
   }
   .navmenu-item{
     font-family: $echobold;
+    text-transform: none;
     font-size: 18.75px;
-    text-transform: capitalize;
     margin-bottom: 10px;
     width: 100%;
       margin-right: 0px;
+    @include media($width-max){
+      text-transform: none;
+    }
     &:last-child{
       @include media($width-max){
         margin-bottom: 0;

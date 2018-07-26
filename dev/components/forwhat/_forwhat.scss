@@ -2,7 +2,7 @@
   text-align: center;
   font-family: $museo300;
   font-size: 14.58px;
-  background-image: url("img/deskbg940.jpg");
+  background-image: url("img/deskbg1700.jpg");
   background-position: center;
   padding: 14px 0 20px 0;
   background-repeat: no-repeat;
@@ -19,8 +19,8 @@
     padding: 91px 0 94px 0;
     font-size: 31.25px;
   }
-  @include media($width-max-mid) {
-    background-image: url("img/deskbg940.jpg");
+  @include media($width-max-max) {
+    background-image: url("img/deskbg1336.jpg");
   }
   @include media($width-max-xs) {
     background-image: url("img/deskbg460.jpg");
@@ -66,10 +66,9 @@
   }
 }
   .forwhat-text{
-    margin-bottom: 23px;
     width: 232px;
-    display: inline-block;
-    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 23px;
     @include media($width-xs){
       margin-bottom: 37px;
       width: 332px;
@@ -79,6 +78,7 @@
       width: 670px;
     }
     @include media($width-max){
+      display: inline-block;
       text-align: left;
       margin-bottom: 22px;
       width: 100%;

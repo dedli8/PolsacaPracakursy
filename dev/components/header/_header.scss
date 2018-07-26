@@ -79,6 +79,7 @@
       }
   }
   .language-item{
+    cursor: pointer;
     font-family: $echomed;
     display: inline-block;
     color: #1d1d1d;
@@ -103,5 +104,11 @@
 background-color: black;
     border-radius: 9px;
     color: $mainwhite;
+  }
+  .navmenu-item a:hover .menu-item-line {
+    @include media($width-max){
+      top: 31px;
+      height: 7px;
+    }
   }
 }
