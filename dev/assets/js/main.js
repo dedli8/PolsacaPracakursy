@@ -15,7 +15,6 @@ langPanel.addEventListener('click', changeLang);
 
 // banner script starts
 
-// banner script starts
 (function () {
     function Slideshow(element) {
         if(document.querySelector(element)) {
@@ -105,4 +104,4 @@ self.slidesPrev.addEventListener('click', function () {
 
 })();
 
-// banner autoplay script ends
+// banner script ends
