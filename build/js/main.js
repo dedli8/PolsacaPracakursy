@@ -15,11 +15,10 @@ langPanel.addEventListener('click', changeLang);
 
 // banner script starts
 
-// banner script starts
 (function () {
     function Slideshow(element) {
-        if(document.querySelector(element)) {
             this.el = document.querySelector(element);
+        if(this.el) {
             this.init();
         }
         else {
@@ -29,15 +28,24 @@ langPanel.addEventListener('click', changeLang);
 
     Slideshow.prototype = {
         init: function () {
-                if(screen.width<1279){
             this.slides = this.el.querySelectorAll(".mySlides");
             this.slidesNext = this.el.querySelector(".next");
             this.slidesPrev = this.el.querySelector(".prev");
+            this.dots = this.el.querySelectorAll(".dot");
+            this.dotsContainer = this.el.querySelector(".dots-container");
             this.index = 0;
             this.timer = null;
-            this.action();
-            this.stopStart();
-                }
+            // this.stop = 'start';
+            if(screen.width<1279){
+                this.action();
+                this.stopStart();
+                // this.stopSlider();
+            }
+            else if(document.querySelector('.vacancies-slider')){
+                this.action();
+                this.stopStart();
+                // this.stopSlider();
+            }
         },
         _slideTo: function (slide) {
             var currentSlide = this.slides[slide];
@@ -51,14 +59,27 @@ langPanel.addEventListener('click', changeLang);
         },
         action: function () {
             var self = this;
+            if(self.stop == 'stop'){
+                return
+            }
             self.timer = setInterval(function () {
                 self.index++;
                 if (self.index == self.slides.length) {
                     self.index = 0;
                 }
+                self.changeDots();
                 self._slideTo(self.index);
 
             }, 3000);
+        },
+        changeDots: function () {
+            if (this.dots[0]) {
+                var self = this;
+                for (i = 0; i < self.dots.length; i++) {
+                    self.dots[i].className = self.dots[i].className.replace(" active", "");
+                }
+                self.dots[self.index].className += " active";
+            }
         },
         next: function () {
             var self = this;
@@ -66,29 +87,57 @@ langPanel.addEventListener('click', changeLang);
             if (self.index == self.slides.length) {
                 self.index = 0;
             }
+            self.changeDots();
             self._slideTo(self.index);
         },
         prev: function () {
             var self = this;
-            if(self.index == 0){
+            if (self.index==0) {
                 self.index = self.slides.length;
             }
             self.index--;
+            self.changeDots();
             self._slideTo(self.index);
         },
+        // stopSlider:function () {
+        //     var self = this;
+        //     document.addEventListener('resise', function () {
+        //         self.stop = 'stop';
+        //         if (screen.width>1279) {
+        //             self.stop = 'start';
+        //             this.stopStart();
+        //             this.stopSlider();
+        //         }
+        //         else if (document.querySelector('.vacancies-slider')){
+        //             self.stop = 'start';
+        //             this.stopStart();
+        //             this.stopSlider();
+        //         }
+        //     })
+        // },
         stopStart: function () {
             var self = this;
+            if(self.stop == 'stop'){
+                return
+            }
             self.el.addEventListener("mouseover", function () {
                 clearInterval(self.timer);
                 self.timer = null;
-                if(self.slidesNext){
-self.slidesNext.addEventListener('click', function () {
-    self.next();
-});
-self.slidesPrev.addEventListener('click', function () {
-    self.prev();
-});}
             }, false);
+            if(self.slidesNext){
+                self.slidesNext.addEventListener('click', function () {
+                    self.next();
+                });
+                self.slidesPrev.addEventListener('click', function () {
+                    self.prev();
+                });}
+            if(self.dotsContainer){
+                self.dotsContainer.addEventListener('click', function (e) {
+                    self.index = parseInt(e.target.getAttribute('data-index'));
+                    self.changeDots();
+                    self._slideTo(self.index);
+                });
+            }
             self.el.addEventListener("mouseout", function () {
                 self.action();
 
@@ -105,4 +154,4 @@ self.slidesPrev.addEventListener('click', function () {
 
 })();
 
-// banner autoplay script ends
+// banner script ends
